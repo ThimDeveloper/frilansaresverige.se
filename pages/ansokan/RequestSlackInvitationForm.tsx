@@ -1,6 +1,6 @@
 import classNames from 'classnames'
 import styles from './RequestSlackInvitationForm.module.css'
-import { useSubmitSlackInvitationForm } from '../../hooks/useSubmitSlackInvitationForm'
+import { useSubmitSlackInvitationForm } from '@/hooks/useSubmitSlackInvitationForm'
 
 const RequestSlackInvitationForm = () => {
   const { submitForm, data, error } = useSubmitSlackInvitationForm()
