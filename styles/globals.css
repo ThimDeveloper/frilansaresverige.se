@@ -14,6 +14,7 @@ body {
   background: var(--blue);
   position: relative;
   height: 100%;
+  z-index: -1;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
@@ -32,7 +33,7 @@ body::after {
   height: 40em;
   position: fixed;
   bottom: 0;
-  z-index: 0;
+  z-index: -1;
   transform: translateX(50%);
 }
 
@@ -68,7 +69,8 @@ a {
   position: relative;
 }
 
-.spacer {
+.spacer,
+.logo-container {
   flex: 999 1 8em;
 }
 
