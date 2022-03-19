@@ -1,8 +1,8 @@
 import classNames from 'classnames'
-import styles from './RequestSlackInvitationForm.module.css'
+import styles from './index.module.css'
 import { useSubmitSlackInvitationForm } from '@/hooks/useSubmitSlackInvitationForm'
 
-const RequestSlackInvitationForm = () => {
+export const RequestSlackInvitationForm = () => {
   const { submitForm, data, error } = useSubmitSlackInvitationForm()
 
   if (data?.success) {
@@ -119,5 +119,3 @@ const RequestSlackInvitationForm = () => {
     </div>
   )
 }
-
-export default RequestSlackInvitationForm

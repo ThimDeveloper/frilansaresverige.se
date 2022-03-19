@@ -1,11 +1,12 @@
 import React from 'react'
 import Link from 'next/link'
+import styles from './index.module.css'
 
 export const LogoHeader: React.FC = () => {
   return (
     <>
       <Link href="/">
-        <a className="logo-container" title="Gå till startsidan">
+        <a className={styles['logo-container']} title="Gå till startsidan">
           <svg
             width="137"
             height="112"

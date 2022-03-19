@@ -1,6 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import RequestSlackInvitationForm from './RequestSlackInvitationForm'
+import { RequestSlackInvitationForm } from '@/components/RequestSlackInvitationForm'
 
 const Ansokan: NextPage = () => {
   return (
@@ -8,7 +8,6 @@ const Ansokan: NextPage = () => {
       <Head>
         <title>Frilansare Sverige - Ansök om medlemskap</title>
       </Head>
-
       <RequestSlackInvitationForm />
     </>
   )

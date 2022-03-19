@@ -68,8 +68,7 @@ a {
   position: relative;
 }
 
-.spacer,
-.logo-container {
+.spacer {
   flex: 999 1 8em;
 }
 
