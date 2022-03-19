@@ -2,11 +2,18 @@ import React from 'react'
 import Link from 'next/link'
 import styles from './index.module.css'
 
-export const LogoHeader: React.FC = () => {
+interface LogoHeader {
+  backgroundColor?: string
+}
+export const LogoHeader: React.FC<LogoHeader> = ({ backgroundColor }) => {
   return (
     <>
       <Link href="/">
-        <a className={styles['logo-container']} title="Gå till startsidan">
+        <a
+          className={styles['logo-container']}
+          style={{ backgroundColor }}
+          title="Gå till startsidan"
+        >
           <svg
             width="137"
             height="112"

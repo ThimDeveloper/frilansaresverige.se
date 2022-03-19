@@ -2,9 +2,12 @@ import React from 'react'
 import Image from 'next/image'
 import styles from './index.module.css'
 
-export const Footer: React.FC = () => {
+interface FooterProps {
+  backgroundColor?: string
+}
+export const Footer: React.FC<FooterProps> = ({ backgroundColor }) => {
   return (
-    <footer className="footer">
+    <footer className="footer" style={{ backgroundColor }}>
       <a
         href="https://github.com/frilansaresverige/frilansaresverige.se/"
         target="_blank"
